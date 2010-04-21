@@ -1,0 +1,8 @@
+mkdir /Users/japanrock/ProjectMemo/$1
+open /Users/japanrock/ProjectMemo/$1
+if [ -f /Users/japanrock/ProjectMemo/$1/memo.txt ];
+then
+open /Users/japanrock/ProjectMemo/$1/memo.txt
+else
+:> /Users/japanrock/ProjectMemo/$1/memo.txt
+fi
